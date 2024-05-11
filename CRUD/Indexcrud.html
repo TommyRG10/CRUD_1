@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud app</title>
+    <link rel="stylesheet" href="stylecrud.css">
+    <script src="Crudapp.js"></script>
+</head>
+<body>
+   <section class="image">
+    <img class="image" src="https://www.hun.edu.co/sites/default/files/2024-01/logo_1.png">
+   </section> 
+    <main class="container">
+        <section class="crud">
+            <h1 class="crud_title">Control de ingreso UCI</h1>
+            <br>
+            <form id="formRegister" class="crud_form">
+                <input type="text" placeholder="Nombre usuario" id="nameinput" class="form_input">
+                <input type="number" pattern="[0-9]*" placeholder="ID usuario" id="idinput" class="form_input">
+
+                <button type="submit" id="submitbutton" class="button  button--primary" >Agregar</button>
+            </form>
+
+            <table class="crudtable">
+                <thead>
+                    <tr>
+                        <th class="table_header">Nombre</th>
+                        <th class="table_header">ID</th>
+                        <th class="table_header">Fecha</th>
+                            <div id="dateinput"></div> 
+                        <th class="table_header">Acciones</th>
+                    </tr>
+                </thead>
+        
+                <tbody id="tablebody" class="table_body">
+                </tbody>
+                </table>
+        </section>
+    </main>
+</body>
+</html>
